@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Tema4-Ejercicios": {
+    "angular-avanzado": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/tema4-ejercicios",
+            "outputPath": "dist/angular-avanzado",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,13 +31,9 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.scss"
             ],
-            "scripts": [
-              "./node_modules/jquery/dist/jquery.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -76,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Tema4-Ejercicios:build:production"
+              "browserTarget": "angular-avanzado:build:production"
             },
             "development": {
-              "browserTarget": "Tema4-Ejercicios:build:development"
+              "browserTarget": "angular-avanzado:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -87,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Tema4-Ejercicios:build"
+            "browserTarget": "angular-avanzado:build"
           }
         },
         "test": {
@@ -111,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "Tema4-Ejercicios"
+  "defaultProject": "angular-avanzado"
 }
