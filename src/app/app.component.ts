@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { fileURLToPath } from 'url';
-import { ImagenModel } from './models/imagen.model';
+import { ImagenModel } from 'src/app/models/Imagen.model';
 import { FirestorageService } from './services/firestorage.service';
 import { FirestoreService } from './services/firestore.service';
 
